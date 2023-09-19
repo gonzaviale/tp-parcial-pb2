@@ -1,5 +1,6 @@
 package ar.edu.unlam.pb2;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Alumno {
@@ -9,7 +10,9 @@ public class Alumno {
 	private Integer dni;
 	private Date fechaNac; 
 	private Date fechaIngreso;
-	
+	private ArrayList<Materia> materiasAprobadas;
+	private ArrayList<Materia> materiasPendientes; 
+
 	public Alumno() {
 		
 	}
@@ -69,4 +72,20 @@ public class Alumno {
 		this.fechaIngreso = fechaIngreso;
 	}
 
-}
+	public ArrayList<Materia> getMateriasAprobadas() { 
+		return materiasAprobadas;
+	}
+
+	public void setMateriasAprobadas(ArrayList<Materia> materiasAprobadas) {
+		this.materiasAprobadas = materiasAprobadas;
+	}
+
+	public ArrayList<Materia> getMateriasPendientes() {
+		return materiasPendientes;
+	}
+
+	public void setMateriasPendientes(ArrayList<Materia> materiasPendientes) {
+		this.materiasPendientes = materiasPendientes;
+	}
+	
+} 
